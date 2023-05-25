@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario | Materiales</title>
+    <link rel="stylesheet" href="../css/materiales.css">
+    <link rel="shortcut icon" href="../image/libro.ico" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<header>
+    <div class="botones">
+        <h1 id="tituloheader">Materiales</h1>
+        <ul id="nav">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="materiales.html">Materiales</a></li>
+            <li><a href="programacion.html">Programacion</a></li>
+            <li><a href="">Montaje</a></li>
+            <li><a href="">Código de Activación</a></li>
+            <li>
+                <button id="buscarapa">Buscar</button>
+            </li>
+            <li>
+                <form id="formularioBusqueda" action="resultado_busqueda.html" method="get" class="formulario">
+                    <input type="text" name="busqueda" placeholder="Buscar">
+                    <input type="submit" value="Buscar">
+                </form>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        var botonBuscar = document.getElementById("buscarapa");
+        var formularioBusqueda = document.getElementById("formularioBusqueda");
+        var navegador = document.getElementById("nav");
+
+        botonBuscar.addEventListener("click", function () {
+            formularioBusqueda.classList.add("mostrar");
+            botonBuscar.classList.add("ocultar");
+            navegador.style.left = "0%";
+        });
+    </script>
+    <script>
+            // Obtén el elemento con la clase "materiales"
+                const elemento = document.querySelector(".materiales");
+
+                // Obtén el botón oculto dentro del elemento
+                const botonOculto = elemento.querySelector(".boton-oculto");
+
+                // Añade un evento de hover al elemento
+                elemento.addEventListener("mouseover", function () {
+                    // Muestra el botón oculto
+                    botonOculto.style.display = "block";
+                });
+
+                elemento.addEventListener("mouseout", function () {
+                    // Oculta el botón cuando se sale del hover
+                    botonOculto.style.display = "none";
+                });
+    </script>
+
+</header>
+
+<body>
+    <h1 id="titulo">Materiales</h1>
+    <p id="subtitulo">Estos son los materiales que hemos usado para hacer la maquina.</p>
+    <div class="pagina">
+        <div class="materiales">
+            <img src="../image/arduinouno.jpg" alt="">
+            <h3>Arduino Uno</h3>
+            <p>Esto es un mini controlador, sirve para controlar los dispositivos por codigo.</p>
+            <a href="https://www.amazon.es/Arduino-UNO-A000066-microcontrolador-ATmega328/dp/B008GRTSV6/ref=sr_1_1_sspa?__mk_es_ES=ÅMÅŽÕÑ&crid=1ISNDIYYY95KJ&keywords=arduino+uno&qid=1684877026&sprefix=arduino+uno%2Caps%2C88&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" class="boton-oculto">Ver Amazon</a>
+        </div>
+        <div class="materiales">
+            <img src="../image/servomotor.jpg" alt="">
+            <h3>Servo motores 360º</h3>
+            <p>Estos servo motores de 360º nos han servido para hacer que el articulo seleccionado por el usuario sea
+                posible entregarlo.</p>
+            <a href="https://www.amazon.es/Servomotor-rotación-Motorreductor-aeronaves-automóviles/dp/B08RMYN6Z1/ref=sr_1_9?keywords=servomotor+arduino+360+grados&qid=1684877149&sprefix=servo+motor+arduino+%2Caps%2C80&sr=8-9" class="boton-oculto">Ver Amazon</a>   
+        </div>
+        <div class="materiales">
+            <img src="../image/keypad4x4.jpg" alt="">
+            <h3>Keypad 4x4</h3>
+            <p>Este keypad 4x4 nos has servido para seleccionar la opcion que quiere el usuario, ingresar
+                codigos/contraseña, seleccionar usuarios etc.</p>
+                <a href="https://www.amazon.es/AZDelivery-colección-teclado-numérico-incluido/dp/B08B3JR8W9/ref=sr_1_1_sspa?keywords=keypad+arduino&qid=1684877205&sprefix=keypad+%2Caps%2C86&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&smid=A1X7QLRQH87QA3" class="boton-oculto">Ver Amazon</a>   
+        </div>
+        <div class="materiales">
+            <img src="../image/lcd.jpg" alt="">
+            <h3>LCD 16x2</h3>
+            <p>El LCD es una pantalla que en nuestra maquina sirve para que el usuario vea que opciones tiene para
+                seleccionar.</p>
+                <a href="https://www.amazon.es/dp/B079T264ZZ/ref=twister_B07ZGBJLWW?_encoding=UTF8&psc=1" class="boton-oculto">Ver Amazon</a>   
+        </div>
+        <div class="materiales">
+            <img src="../image/i2clcd.jpg" alt="">
+            <h3>I2C Display LCD</h3>
+            <p>Es un complemento para el componente LCD que sirve para hacer las conexiones con menos cables y mas
+                fácil.</p>
+                <a href="https://www.amazon.es/AZDelivery-HD44780-visualización-16-caracteres-Schnittstelle/dp/B01MFB4743/ref=sr_1_4?__mk_es_ES=ÅMÅŽÕÑ&crid=3MD4NBCK0VVW7&keywords=i2c+lcd+arduino&qid=1684877363&sprefix=i2c+lcd+arduino+%2Caps%2C67&sr=8-4" class="boton-oculto">Ver Amazon</a>  
+        </div>
+        <div class="materiales">
+            <img src="../image/resistencias.jpg" alt="">
+            <h3>Resistencias</h3>
+            <p>Las resistencias nos sirven para el LCD.</p>
+            <a href="https://www.amazon.es/AUKENIEN-Resistencias-Valores-Resistencia-Película/dp/B09W682JMK/ref=sr_1_3?__mk_es_ES=ÅMÅŽÕÑ&crid=23OMCBKZWX4UW&keywords=resistencias+arduino+AUKENIEN&qid=1684877460&sprefix=resistencias+arduino+aukenien%2Caps%2C72&sr=8-3" class="boton-oculto">Ver Amazon</a>  
+        </div>
+        <div class="materiales">
+            <img src="../image/protoboard.jpg" alt="">
+            <h3>Protoboard</h3>
+            <p>El protoboard sirve para sacar mas pines con solamente un pin.</p>
+            <a href="https://www.amazon.es/dp/B07K8PQ4B5/ref=twister_B082MNBXQ4?_encoding=UTF8&psc=1" class="boton-oculto">Ver Amazon</a>  
+        </div>
+        <div class="materiales">
+            <img src="../image/fuentedealimentacion.jpg" alt="">
+            <h3>Fuente de Alimentación</h3>
+            <p>Esta Fuente de Alimentacion ha servido para alimentar a todos los componentes de la maquina.</p>
+            <a href="https://www.amazon.es/Unyka-Fuente-FSX-Micro-450W/dp/B07JFQZWQN/ref=sr_1_4?__mk_es_ES=ÅMÅŽÕÑ&crid=HXBWJIKEX3LH&keywords=sfx+fuente+de+alimentacion&qid=1684877568&sprefix=sfx+fuente+de+alimentacion%2Caps%2C80&sr=8-4" class="boton-oculto">Ver Amazon</a>  
+        </div>
+        <div class="materiales">
+            <img src="../image/cables.jpg" alt="">
+            <h3>Cables</h3>
+            <p>Cables para conectar los componentes al controlador.</p>
+            <a href="https://www.amazon.es/AZDelivery-Jumper-Arduino-Raspberry-Breadboard/dp/B07KKJ69DV/ref=sr_1_1_sspa?__mk_es_ES=ÅMÅŽÕÑ&crid=IWPD58042RBM&keywords=cable+arduino&qid=1684877595&sprefix=cable+arduino%2Caps%2C85&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&smid=A1X7QLRQH87QA3" class="boton-oculto">Ver Amazon</a>  
+        </div>
+        <div class="materiales">
+            <img src="../image/alambrejpg" alt="">
+            <h3>Alambre</h3>
+            <p>El alambre es para los servo motores para empujar el articulo</p>
+        </div>
+        <div class="materiales">
+            <img src="../image/madera.jpg" alt="">
+            <h3>Estructura</h3>
+            <p>Este es el material que hemos hecho la estructura de la maquina</p>
+            <a href="https://www.amazon.es/AZDelivery-Jumper-Arduino-Raspberry-Breadboard/dp/B07KKJ69DV/ref=sr_1_1_sspa?__mk_es_ES=ÅMÅŽÕÑ&crid=IWPD58042RBM&keywords=cable+arduino&qid=1684877595&sprefix=cable+arduino%2Caps%2C85&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&smid=A1X7QLRQH87QA3" class="boton-oculto">Ver Amazon</a>  
+        </div>
+    </div>
+    <h1 id="titulo">Herramientas</h1>
+    <p id="subtitulo">Estas son las herramientas que hemos utilizado.</p>
+    <div class="pagina">
+        <div class="herramientas">
+            <img src="../image/pistola.jpg" alt="">
+            <h3>Pistola de Silicona</h3>
+            <p>Para reforzar la estructura o los cables para que no se suelten</p>
+        </div>
+        <div class="herramientas">
+            <img src="../image/destornillador_elec.jpg" alt="">
+            <h3>Destornillador Electrico</h3>
+            <p>Para atornillar y hacer agujeros</p>
+        </div>
+        <div class="herramientas">
+            <img src="../image/alicates.jpg" alt="">
+            <h3>Alicates</h3>
+            <p>Para cortar el alambre</p>
+        </div>
+        <div class="herramientas">
+            <img src="../image/pinzas de punta.jpg" alt="">
+            <h3>Pinzas de punta</h3>
+            <p></p>
+        </div>
+        <div class="herramientas">
+            <img src="../image/soldador.jpg" alt="">
+            <h3>Soldador</h3>
+            <p>Soldar cables</p>
+        </div>
+    </div>
+    
+    <p id="subtitulo">Estos son todos los materiales y herramientas que hemos necesitado para construir la maquina.</p>
+    <div class="boton">
+        <a href="">Montaje</a>
+    </div>
+
+</body>
+
+<footer>
+    <div class="columna" id="columna1">
+        <h1>Materiales</h1>
+    </div>
+    <div class="columna" id="columna2">
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Materiales</a></li>
+            <li><a href="">Programacion</a></li>
+            <li><a href="">Montaje</a></li>
+            <li><a href="">Código de Activación</a></li>
+        </ul>
+    </div>
+</footer>
+
+</html>

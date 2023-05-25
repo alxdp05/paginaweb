@@ -1,0 +1,18 @@
+Work Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol
+
+
+<p>  Para realizar tareas de mantenimiento en la máquina, se ha incorporado una cuenta de usuario secreta
+                    exclusiva para el personal encargado del mantenimiento. Esta cuenta proporciona acceso especial y
+                    privilegios para llevar a cabo las labores de mantenimiento necesarias, garantizando así un
+                    funcionamiento óptimo del sistema. </p>
+
+                <p> Adicionalmente, el sistema cuenta con una funcionalidad que guarda los códigos validados en la
+                    memoria EEPROM. Esto significa que una vez que un código ha sido validado y utilizado para obtener
+                    créditos, no podrá ser validado nuevamente. Esta característica evita el uso repetido de un mismo
+                    código y promueve un canje justo de los créditos.</p>
+
+                <p>  En resumen, el sistema ofrece la posibilidad de iniciar sesión con hasta dos cuentas de usuario,
+                    cada una con su propia contraseña personalizada. También permite ingresar códigos para obtener
+                    créditos, que se almacenan de manera separada en cada cuenta de usuario. Además, se cuenta con una
+                    cuenta secreta para el mantenimiento de la máquina, y los códigos validados se guardan en la memoria
+                    EEPROM para evitar su revalidación. </p>

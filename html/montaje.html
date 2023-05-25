@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario | Montaje</title>
+    <link rel="stylesheet" href="../css/montaje.css">
+    <link rel="shortcut icon" href="../image/libro.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<header>
+    <div class="botones">
+        <h1 id="tituloheader">Montaje</h1>
+        <ul id="nav">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="materiales.html">Materiales</a></li>
+            <li><a href="programacion.html">Programacion</a></li>
+            <li><a href="montaje.html">Montaje</a></li>
+            <li><a href="">Código de Activación</a></li>
+            <li>
+                <button id="buscarapa">Buscar</button>
+            </li>
+            <li>
+                <form id="formularioBusqueda" action="resultado_busqueda.html" method="get" class="formulario">
+                    <input type="text" name="busqueda" placeholder="Buscar">
+                    <input type="submit" value="Buscar">
+                </form>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        var botonBuscar = document.getElementById("buscarapa");
+        var formularioBusqueda = document.getElementById("formularioBusqueda");
+        var navegador = document.getElementById("nav");
+
+
+        botonBuscar.addEventListener("click", function () {
+            formularioBusqueda.classList.add("mostrar");
+            botonBuscar.classList.add("ocultar");
+            navegador.style.left = "0%";
+
+        });
+    </script>
+    <script>
+        // Obtén el elemento con la clase "materiales"
+        const elemento = document.querySelector(".materiales");
+
+        // Obtén el botón oculto dentro del elemento
+        const botonOculto = elemento.querySelector(".boton-oculto");
+
+        // Añade un evento de hover al elemento
+        elemento.addEventListener("mouseover", function () {
+            // Muestra el botón oculto
+            botonOculto.style.display = "block";
+        });
+
+        elemento.addEventListener("mouseout", function () {
+            // Oculta el botón cuando se sale del hover
+            botonOculto.style.display = "none";
+        });
+    </script>
+
+</header>
+<body>
+    <h1 id="titulo">Montaje</h1>
+    <p id="subtitulo">Como montar una Maquina Expendedora, con <strong>Arduino</strong>.</p>
+    <h2 id="titulointro">Estructura</h2>
+    <div class="articulos">
+    <div class="articulo">
+        <h2 id="titulo2">1. Montar Estructura</h2>
+        <p id="parrafo">Para empezar el montaje hay que unir 4 tablas de madera para hacer una caja con la pistola de silicona</p>
+        <img src="../image/estructura.jpg" alt="">
+    </div>
+    <div class="articulo">
+        <h2 id="titulo2">1. Montar Estructura</h2>
+        <p id="parrafo">Para empezar el montaje hay que unir 4 tablas de madera para hacer una caja con la pistola de silicona</p>
+        <img src="../image/estructura.jpg" alt="">
+    </div>
+</div>
+</body>
+<footer>
+    <div class="columna" id="columna1">
+        <h1>Programacion</h1>
+    </div>
+    <div class="columna" id="columna2">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="materiales.html">Materiales</a></li>
+            <li><a href="programacion.html">Programacion</a></li>
+            <li><a href="montaje.html">Montaje</a></li>
+            <li><a href="">Código de Activación</a></li>
+        </ul>
+    </div>
+</footer>
+</html>
