@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
 </head>
 <header>
     <div class="botones">
@@ -66,26 +68,113 @@
     </script>
 
 </header>
+
 <body>
     <h1 id="titulo">Montaje</h1>
     <p id="subtitulo">Como montar una Maquina Expendedora, con <strong>Arduino</strong>.</p>
     <h2 id="titulointro">Estructura</h2>
     <div class="articulos">
-    <div class="articulo">
-        <h2 id="titulo2">1. Montar Estructura</h2>
-        <p id="parrafo">Para empezar el montaje hay que unir 4 tablas de madera para hacer una caja con la pistola de silicona</p>
-        <img src="../image/estructura.jpg" alt="">
+        <div class="articulo">
+            <h2 id="titulo2">1. Montar Estructura</h2>
+            <p id="parrafo">Para empezar el montaje hay que unir 4 tablas de madera para hacer una caja con la pistola
+                de silicona</p>
+            <img src="../image/estructura.jpg" alt="">
+        </div>
+        <div class="articulo">
+            <h2 id="titulo2">1.1 Colocar puertas</h2>
+            <p id="parrafo">Para poner las puertas tenemos que utilizar <strong>bisagras</strong> para que se pueda
+                abrir y cerrar
+                facilmente, tenemos que utilizar 2 bisagras por puerta, para poner los tornillos podemos utilizar un
+                pincho o un
+                destornillador electrico ya como es madera muy fina se pueden hacer los agujeros muy facilmente.</p>
+
+            <div class="carousel">
+                <div class="slide">
+                    <img id="carrousel" src="../image/puerta1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img id="carrousel" src="../image/puerta2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <video id="video" width="40%" height="240" controls muted>
+                        <source src="/video/puerta3.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <button id="prevBtn"><i class="fa fa-angle-left"></i></button>
+            <button id="nextBtn"><i class="fa fa-angle-left"></i></button>
+        </div>
+        <div class="articulo">
+            <h2>1.2 Crear huecos</h2>
+            <p id="parrafo">Toca hacer huecos para que todos los componentes puedan ser accesible para el circuito de
+                dentro. Tenemos que hacer huecos para estos componentes:</p>
+            <p id="parrafo"><strong>Keypad</strong>,<strong> LCD</strong>, <strong> Fuente de Alimentacion</strong>,
+                Hueco de recogida del articulo y Ventana.</p>
+            <img src="../image/huecos.jpg" alt="">
+        </div>
     </div>
-    <div class="articulo">
-        <h2 id="titulo2">1. Montar Estructura</h2>
-        <p id="parrafo">Para empezar el montaje hay que unir 4 tablas de madera para hacer una caja con la pistola de silicona</p>
-        <img src="../image/estructura.jpg" alt="">
+    <h2 id="titulointro">Circuito</h2>
+    <div class="circuito">
+        <div class="circu">
+            <h2>2. Montar Circuito</h2>
+        </div>
+
     </div>
-</div>
+
+    <script>
+
+        const carousel = document.querySelector('.carousel');
+        const slides = carousel.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        let currentSlide = 0;
+
+
+        function showSlide(index) {
+
+            slides.forEach(slide => slide.classList.remove('active'));
+
+            slides[index].classList.add('active');
+        }
+
+
+        function goToPrevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+            } else {
+                currentSlide = slides.length - 1;
+            }
+
+            showSlide(currentSlide);
+        }
+
+
+        function goToNextSlide() {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+            } else {
+                currentSlide = 0;
+            }
+
+            showSlide(currentSlide);
+        }
+
+
+        prevBtn.addEventListener('click', goToPrevSlide);
+
+
+        nextBtn.addEventListener('click', goToNextSlide);
+
+        // Mostrar el primer slide al cargar la página
+        showSlide(currentSlide);
+
+    </script>
+
 </body>
 <footer>
     <div class="columna" id="columna1">
-        <h1>Programacion</h1>
+        <h1>Montaje</h1>
     </div>
     <div class="columna" id="columna2">
         <ul>
@@ -97,4 +186,5 @@
         </ul>
     </div>
 </footer>
+
 </html>
