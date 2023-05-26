@@ -225,14 +225,25 @@ a:hover {
 #func {
     position: relative;
     left: 31.5%;
+    text-align: justify;
+    font-size: 22px;
+    padding: 20px;
 }
+
+#func h2 {
+    text-align: center;
+}
+
+
+
 
 
 .parrafos h2 {
     font-family: Work Sans;
     font-size: 28px;
     font-weight: 600;
-    padding: 15px;
+    padding: 5px;
+    position: relative;
 }
 
 .parrafos p {

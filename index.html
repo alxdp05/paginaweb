@@ -18,11 +18,11 @@
     <div class="botones">
         <h1 id="tituloheader">Manual de Usuario</h1>
         <ul id="nav">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="html/materiales.html">Materiales</a></li>
-            <li><a href="html/programacion.html">Programacion</a></li>
-            <li><a href="">Montaje</a></li>
-            <li><a href="">Código de Activación</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="/html/materiales.html">Materiales</a></li>
+            <li><a href="/html/programacion.html">Programación</a></li>
+            <li><a href="/html/montaje.html">Montaje</a></li>
+            <li><a href="/html/codigodeactivacion.html">Código de Activación</a></li>
             <li>
                 <button id="buscarapa">Buscar</button>
             </li>
@@ -52,38 +52,34 @@
 <body>
     <div class="pagina">
         <div class="titulo">
-            <h1>Maquina Expendedora</h1>
-            <p>Este es el manual de una maquina expendedora.</p>
+            <h1>Máquina Expendedora</h1>
+            <p>Este es el manual de una máquina expendedora.</p>
         </div>
         <canvas id="myCanvas"></canvas>
         <div class="contenedordeparrafos">
             <div class="parrafos" id="info">
                 <h2>Información</h2>
-                <p>La máquina expendedora cuenta con un sistema de configuración de contraseña para hasta 2 usuarios. Si
-                    no se ha establecido una contraseña, el usuario puede configurar una de hasta 8 caracteres, la cual
-                    se guarda en el EEPROM de Arduino. Además, se puede ingresar un código de 5 caracteres, y si es
-                    válido, se almacena en el EEPROM de Arduino para evitar ingresos repetidos. Los créditos también se
-                    guardan en el EEPROM, y es importante destacar que los créditos y las contraseñas de los usuarios se
-                    almacenan por separado en el EEPROM.</p>
-                <p> Cuando hayas metido un codigo valido tiene la funcionalidad de guardar los creditos para mas
-                    adelante en el sistema de usuarios, si no tienes un usuario puedes meter un codigo y cuando ingrese
-                    un codigo valido puede seleccionar el articulo que quiera sacar de la maquina expendedora.</p>
-                    <button>Leer más</button>
+                <p>La máquina expendedora creada con Arduino es un dispositivo que registra códigos válidos en su memoria EEPROM para
+                    evitar repeticiones. Además, cuenta con un menú de mantenimiento accesible mediante contraseña. Este menú ofrece
+                    opciones como cambiar la contraseña, borrar la memoria EEPROM, reiniciar la máquina y mostrar el contenido
+                    almacenado. Con estas funcionalidades, la máquina expendedora garantiza un manejo seguro y eficiente de los códigos,
+                    así como la posibilidad de realizar tareas de mantenimiento y monitoreo de manera conveniente. En resumen, este
+                    sistema permite la gestión eficaz de los códigos y un control completo sobre el funcionamiento de la máquina
+                    expendedora.</p>
             </div>
             <div class="parrafos" id="func">
                 <h2>Funcionamiento</h2>
-                <p>El Funcionamiento de esta maquina expendedora es la siguiente:</p>
-                <p>El sistema cuenta con una función de inicio de sesión que permite a los usuarios acceder al sistema
-                    mediante el uso de hasta dos cuentas de usuario personalizadas. Cada cuenta puede ser protegida con
-                    una contraseña única para garantizar la seguridad de los datos.</p>
-
-                <p> Además, el sistema ofrece una funcionalidad adicional que permite a los usuarios ingresar códigos
-                    especiales para obtener créditos. Estos créditos pueden ser canjeados tanto por usuarios registrados
-                    como por aquellos que no tienen una cuenta en el sistema. Es importante destacar que los créditos
-                    obtenidos se almacenan de manera separada en cada cuenta de usuario, asegurando que los créditos
-                    estén asociados correctamente.</p>
-
-                <button>Leer más</button>
+                <p>El Funcionamiento de esta máquina expendedora es la siguiente:</p>
+                <p>
+                La máquina expendedora creada con Arduino opera registrando códigos válidos en su memoria EEPROM y evitando
+                repeticiones. Cuando un usuario ingresa un código, este es verificado y, si es válido y no está previamente registrado,
+                se almacena en la memoria EEPROM para su posterior procesamiento. La memoria EEPROM garantiza que los códigos validados
+                se conserven incluso cuando la máquina se apaga.
+                
+                Además, la máquina expendedora cuenta con un menú de mantenimiento accesible mediante contraseña. Este menú proporciona
+                opciones para realizar tareas de gestión, como cambiar la contraseña de acceso, borrar toda la memoria del EEPROM,
+                reiniciar la máquina y mostrar el contenido almacenado en la memoria. Estas opciones permiten al usuario mantener el
+                control y realizar acciones necesarias para el funcionamiento y el mantenimiento adecuado de la máquina expendedora.</p>
             </div>
         </div>
     </div>
@@ -196,11 +192,11 @@
     </div>
     <div class="columna" id="columna2">
         <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Materiales</a></li>
-            <li><a href="">Programacion</a></li>
-            <li><a href="">Montaje</a></li>
-            <li><a href="">Código de Activación</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="/html/materiales.html">Materiales</a></li>
+            <li><a href="/html/programacion.html">Programación</a></li>
+            <li><a href="/html/montaje.html">Montaje</a></li>
+            <li><a href="/html/codigodeactivacion.html">Código de Activación</a></li>
         </ul>
     </div>
 </footer>
