@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario | Código de Activación</title>
+    <link rel="stylesheet" href="../css/codigo.css">
+    <link rel="stylesheet" href="../prismjs/prism.css">
+    <script src="../prismjs/prism.js"></script>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+<header>
+    <div class="botones">
+        <h1 id="tituloheader">Código de Activación</h1>
+        <ul id="nav">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="materiales.html">Materiales</a></li>
+            <li><a href="programacion.html">Programación</a></li>
+            <li><a href="montaje.html">Montaje</a></li>
+            <li><a href="codigodeactivacion.html">Código de Activación</a></li>
+            <li>
+                <button id="buscarapa">Buscar</button>
+            </li>
+            <li>
+                <form id="formularioBusqueda" action="resultado_busqueda.html" method="get" class="formulario">
+                    <input type="text" name="busqueda" placeholder="Buscar">
+                    <input type="submit" value="Buscar">
+                </form>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        var botonBuscar = document.getElementById("buscarapa");
+        var formularioBusqueda = document.getElementById("formularioBusqueda");
+        var navegador = document.getElementById("nav");
+
+
+        botonBuscar.addEventListener("click", function () {
+            formularioBusqueda.classList.add("mostrar");
+            botonBuscar.classList.add("ocultar");
+            navegador.style.left = "0%";
+
+        });
+    </script>
+    <script>
+        // Obtén el elemento con la clase "materiales"
+        const elemento = document.querySelector(".materiales");
+
+        // Obtén el botón oculto dentro del elemento
+        const botonOculto = elemento.querySelector(".boton-oculto");
+
+        // Añade un evento de hover al elemento
+        elemento.addEventListener("mouseover", function () {
+            // Muestra el botón oculto
+            botonOculto.style.display = "block";
+        });
+
+        elemento.addEventListener("mouseout", function () {
+            // Oculta el botón cuando se sale del hover
+            botonOculto.style.display = "none";
+        });
+    </script>
+    <script>
+        function generarCodigo() {
+            var codigos = [
+                "AAAAA",
+                "BBBBB",
+                "CCCCC",
+                "DDDDD",
+                "AAA11",
+                "BBB22",
+                "CCC11",
+                "DDD22",
+                "222DD",
+                "333DD",
+                "444DD"
+            ];
+
+            var codigoGenerado = codigos[Math.floor(Math.random() * codigos.length)];
+
+            document.getElementById('codigo-generado').innerHTML = codigoGenerado;
+        }
+    </script>
+
+</header>
+<body>
+    <h1 id="titulo">Generar un código</h1>
+    <p id="subtitulo">Este apartado es para generar un código para usarlo en la Máquina Expendedora.</p>
+    <button id="button" onclick="generarCodigo()">Generar</button>
+    <p id="codigo-generado"></p>
+    <div class="attr">
+    <h2>El código utilizado </h2>
+    <p>El código utilizado de este generador es el siguiente:</p>
+    
+</div>
+    <pre rel="JS"><code class="language-js line-numbers" style="white-space:pre-wrap;">
+        function generarCodigo() {
+            var codigos = [
+                "AAAAA",
+                "BBBBB",
+                "CCCCC",
+                "DDDDD",
+                "AAA11",
+                "BBB22",
+                "CCC11",
+                "DDD22",
+                "222DD",
+                "333DD",
+                "444DD"
+            ];
+
+            var codigoGenerado = codigos[Math.floor(Math.random() * codigos.length)];
+
+            document.getElementById('codigo-generado').innerHTML = codigoGenerado;
+        }
+    </code></pre>
+
+    <pre rel="HTML"><code class="language-html line-numbers" style="white-space:pre-wrap;">
+        &lt;h1 id="titulo"&gt;Generar un código&lt;/h1&gt;
+        &lt;p id="subtitulo"&gt;Este apartado es para generar un código para usarlo en la Máquina Expendedora.&lt;/p&gt;
+        &lt;button id="button" onclick="generarCodigo()"&gt;Generar&lt;/button&gt;
+        &lt;p id="codigo-generado"&gt;&lt;/p&gt;
+        </code></pre>
+</body>
+
+<footer>
+    <div class="columna" id="columna1">
+        <h1>Código de Activación</h1>
+    </div>
+    <div class="columna" id="columna2">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="materiales.html">Materiales</a></li>
+            <li><a href="programacion.html">Programación</a></li>
+            <li><a href="montaje.html">Montaje</a></li>
+            <li><a href="codigodeactivacion.html">Código de Activación</a></li>
+        </ul>
+    </div>
+</footer>
+</html>

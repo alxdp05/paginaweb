@@ -20,9 +20,9 @@
         <ul id="nav">
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="materiales.html">Materiales</a></li>
-            <li><a href="programacion.html">Programacion</a></li>
+            <li><a href="programacion.html">Programación</a></li>
             <li><a href="montaje.html">Montaje</a></li>
-            <li><a href="">Código de Activación</a></li>
+            <li><a href="codigodeactivacion.html">Código de Activación</a></li>
             <li>
                 <button id="buscarapa">Buscar</button>
             </li>
@@ -71,52 +71,84 @@
 
 <body>
     <h1 id="titulo">Montaje</h1>
-    <p id="subtitulo">Como montar una Maquina Expendedora, con <strong>Arduino</strong>.</p>
-    <h2 id="titulointro">Estructura</h2>
-    <div class="articulos">
-        <div class="articulo">
-            <h2 id="titulo2">1. Montar Estructura</h2>
-            <p id="parrafo">Para empezar el montaje hay que unir 4 tablas de madera para hacer una caja con la pistola
-                de silicona</p>
-            <img src="../image/estructura.jpg" alt="">
-        </div>
-        <div class="articulo">
-            <h2 id="titulo2">1.1 Colocar puertas</h2>
-            <p id="parrafo">Para poner las puertas tenemos que utilizar <strong>bisagras</strong> para que se pueda
-                abrir y cerrar
-                facilmente, tenemos que utilizar 2 bisagras por puerta, para poner los tornillos podemos utilizar un
-                pincho o un
-                destornillador electrico ya como es madera muy fina se pueden hacer los agujeros muy facilmente.</p>
-
-            <div class="carousel">
-                <div class="slide">
-                    <img id="carrousel" src="../image/puerta1.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img id="carrousel" src="../image/puerta2.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <video id="video" width="40%" height="240" controls muted>
-                        <source src="/video/puerta3.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-            <button id="prevBtn"><i class="fa fa-angle-left"></i></button>
-            <button id="nextBtn"><i class="fa fa-angle-left"></i></button>
-        </div>
-        <div class="articulo">
-            <h2>1.2 Crear huecos</h2>
-            <p id="parrafo">Toca hacer huecos para que todos los componentes puedan ser accesible para el circuito de
-                dentro. Tenemos que hacer huecos para estos componentes:</p>
-            <p id="parrafo"><strong>Keypad</strong>,<strong> LCD</strong>, <strong> Fuente de Alimentacion</strong>,
-                Hueco de recogida del articulo y Ventana.</p>
-            <img src="../image/huecos.jpg" alt="">
-        </div>
+<p id="subtitulo">Cómo montar una Máquina Expendedora con <strong>Arduino</strong>.</p>
+<h2 id="titulointro">Estructura</h2>
+<div class="articulos">
+    <div class="articulo">
+        <h2 id="titulo2">1. Montar la estructura</h2>
+        <p id="parrafo">Para empezar el montaje, hay que unir 4 tablas de madera para hacer una caja con la pistola de silicona.</p>
+        <img src="../image/estructura.jpg" alt="">
     </div>
-    <h2 id="titulointro">Circuito</h2>
-    <div class="circuito">
-        <div class="circu">
-            <h2>2. Montar Circuito</h2>
+    <div class="articulo">
+        <h2 id="titulo2">1.1 Colocar puertas</h2>
+        <p id="parrafo">Para poner las puertas, tenemos que utilizar bisagras para que se puedan abrir y cerrar fácilmente. Utilizaremos 2 bisagras por puerta. Para colocar los tornillos, podemos utilizar un pincho o un destornillador eléctrico, ya que la madera es muy fina y los agujeros se pueden hacer fácilmente.</p>
+
+        <div class="carousel">
+            <div class="slide">
+                <img id="carrousel" src="../image/puerta1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img id="carrousel" src="../image/puerta2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <video id="video" width="40%" height="240" controls muted>
+                    <source src="/video/puerta3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <button id="prevBtn"><i class="fa fa-angle-left"></i></button>
+        <button id="nextBtn"><i class="fa fa-angle-left"></i></button>
+    </div>
+    <div class="articulo">
+        <h2>1.2 Crear huecos</h2>
+        <p id="parrafo">Es necesario hacer huecos para que todos los componentes puedan ser accesibles desde el circuito interno. Tenemos que hacer huecos para los siguientes componentes:</p>
+        <p id="parrafo"><strong>Keypad</strong>, <strong>LCD</strong>, <strong>Fuente de Alimentación</strong>, Hueco de recogida del artículo y Ventana.</p>
+        <img src="../image/huecos.jpg" alt="">
+    </div>
+</div>
+<h2 id="titulointro">Circuito</h2>
+<div class="circuito">
+    <div class="circu">
+        <h2>2. Montar el circuito</h2>
+        <p id="parrafo">
+            Para realizar el montaje del circuito, es necesario examinar cuidadosamente el diagrama que muestra la disposición de
+            los conectores de pines. Este paso inicial es fundamental, ya que nos permitirá comprender exactamente cómo se deben
+            interconectar los componentes para un funcionamiento óptimo y seguro del circuito. Al analizar cuidadosamente el
+            diagrama, podremos determinar la ubicación precisa de cada conector, lo que nos guiará en el proceso de conectar los
+            diferentes elementos de manera correcta y precisa. Por lo tanto, es importante invertir el tiempo necesario en investigar y comprender
+            los diagramas de pinout, ya que son fundamentales para asegurar el éxito del montaje del circuito y evitar posibles errores
+            o mal funcionamiento.
+        </p>
+
+        <p id="parrafo">
+            Diagrama:
+        </p>
+        <br>
+        <img src="../image/circuito.jpg" alt="">
+        <p id="parrafo">
+            En el diagrama, podemos observar que los pines que transmiten señal están conectados desde el componente hasta el
+            controlador <strong>Arduino</strong>. Además, todos los voltajes y pines de tierra están conectados al protoboard para recibir
+            alimentación de la fuente de energía.
+        </p>
+    </div>
+    <h2 id="titulointro">Detalles</h2>
+    <div class="circu">
+        <h2>3. Detalles</h2>
+        <p id="parrafo">
+            Para perfeccionar la máquina expendedora, puedes reforzar las esquinas mediante el uso de refuerzos adicionales. También
+            puedes considerar agregar un cristal en la ventana para una mayor visibilidad de los productos. Es recomendable ocultar
+            los cables detrás de paredes o conductos para lograr un aspecto más limpio y ordenado. Asimismo, puedes utilizar
+            sujetadores tipo velcro para mantener las puertas bien ajustadas. Estos detalles adicionales contribuirán a mejorar
+            tanto la estética como la funcionalidad de la máquina.
+        </p>
+
+            <div class="galeria">
+            <img id="detalles" src="../image/detalles.jpg" alt="">
+            <video id="detalles" width="20%" height="40vh" controls muted>
+                <source src="/video/detalles3.mp4" type="video/mp4">
+            </video>
+            <img id="detalles" src="../image/detalles2.jpg" alt="">
+        </div>
         </div>
 
     </div>
@@ -180,9 +212,9 @@
         <ul>
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="materiales.html">Materiales</a></li>
-            <li><a href="programacion.html">Programacion</a></li>
+            <li><a href="programacion.html">Programación</a></li>
             <li><a href="montaje.html">Montaje</a></li>
-            <li><a href="">Código de Activación</a></li>
+            <li><a href="codigodeactivacion.html">Código de Activación</a></li>
         </ul>
     </div>
 </footer>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual de Usuario | Programacion</title>
+    <title>Manual de Usuario | Programación</title>
     <link rel="stylesheet" href="../css/programacion.css">
     <link rel="shortcut icon" href="../image/libro.ico" type="image/x-icon">
     <link rel="stylesheet" href="../prismjs/prism.css">
@@ -16,13 +16,13 @@
 </head>
 <header>
     <div class="botones">
-        <h1 id="tituloheader">Programacion</h1>
+        <h1 id="tituloheader">Programación</h1>
         <ul id="nav">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="materiales.html">Materiales</a></li>
-            <li><a href="programacion.html">Programacion</a></li>
-            <li><a href="montaje.html">Montaje</a></li>
-            <li><a href="">Código de Activación</a></li>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="materiales.html">Materiales</a></li>
+          <li><a href="programacion.html">Programación</a></li>
+          <li><a href="montaje.html">Montaje</a></li>
+          <li><a href="codigodeactivacion.html">Código de Activación</a></li>
             <li>
                 <button id="buscarapa">Buscar</button>
             </li>
@@ -74,9 +74,9 @@
         <div class="links" id="DESP">
             <button id="left"><i class="fa fa-angle-left"></i></button>
             <ul id="ul">
-                <li><a href="#librerias">Librerias</a>
+                <li><a href="#librerias">Librerías</a>
                     <ul id="dentro">
-                        <li><a href="#libuti">Librerias Utilizadas en este proyecto</a>
+                        <li><a href="#libuti">Librerías Utilizadas en este proyecto</a>
                             <ul id="dentro">
                                 <li><a href="#servo">Servo</a></li>
                                 <li><a href="#liquid">LiquidCrystal I2C</a></li>
@@ -86,50 +86,50 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="#setup">Funcion Setup</a>
+                <li><a href="#setup">Función Setup</a>
                     <ul id="dentro">
-                        <li><a href="#setupmanual">Funcion Setup para la Maquina Expendedora</a></li>
+                        <li><a href="#setupmanual">Función Setup para la Máquina Expendedora</a></li>
                     </ul>
                 </li>
-                <li><a href="#loop">Funcion Loop</a></li>
-                <li><a href="#loading">Funcion Loading</a></li>
-                <li><a href="#open">Funcion Open</a>
+                <li><a href="#loop">Función Loop</a></li>
+                <li><a href="#loading">Función Loading</a></li>
+                <li><a href="#open">Función Open</a>
                 <ul id="dentro">
                     <li>
-                        <a href="#manual">Funcion Manual</a>
+                        <a href="#manual">Función Manual</a>
                     </li>
                 </ul></li>
-                <li><a href="#text">Funcion Text</a></li>
-                <li><a href="#codigo">Funcion Codigo</a></li>
-                <li><a href="#reboot">Funcion Reboot</a></li>
-                <li><a href="#servfuc">Funcion ServoMotores</a></li>
-                <li><a href="#savecode">Funcion Guardar Codigo Ingresado</a></li>
-                <li><a href="#codecanj">Funcion Codigo Canjeado</a></li>
-                <li><a href="#vercomponen">Verificacion de los componentes</a>
+                <li><a href="#text">Función Text</a></li>
+                <li><a href="#codigo">Función Codigo</a></li>
+                <li><a href="#reboot">Función Reboot</a></li>
+                <li><a href="#servfuc">Función ServoMotores</a></li>
+                <li><a href="#savecode">Función Guardar Código Ingresado</a></li>
+                <li><a href="#codecanj">Función Código Canjeado</a></li>
+                <li><a href="#vercomponen">Verificación de los componentes</a>
                 <ul id="dentro">
                     <li><a href="#verkeypad">Verificar Keypad</a></li>
                     <li><a href="#verservo">Verificar Servo</a></li>
                 </ul></li>
-                <li><a href="#codecomplete">Codigo Completo</a></li>
+                <li><a href="#codecomplete">Código Completo</a></li>
             </ul>
         </div>
         <div class="programacion" id="programacion">
-            <h1 id="librerias" class="titulo">Librerias</h1>
+            <h1 id="librerias" class="titulo">Librerías</h1>
             <p id="parrafo">Las librerías de Arduino son conjuntos de código predefinido que proporcionan funciones y
                 clases para
                 realizar tareas específicas. Estas librerías permiten a los desarrolladores utilizar fácilmente
-                diferentes componentes y periféricos, como sensores, actuadores, pantallas, módulos de comunicación y
+                diferentes componentes y periféricos, como sensores, actuadores, pantallas, módulos de común icación y
                 mucho más, sin tener que escribir todo el código desde cero.</p>
             <ul id="ulibrerias">
                 <li>Librerías oficiales de Arduino: Estas librerías son mantenidas por el equipo de desarrollo de
                     Arduino y se incluyen en el entorno de desarrollo oficial (IDE) de Arduino. Proporcionan soporte
-                    para funciones básicas, como el control de pines, la comunicación serial, el manejo de tiempos y
+                    para funciones básicas, como el control de pines, la común icación serial, el manejo de tiempos y
                     otros aspectos fundamentales.</li>
                 <li>
-                    Librerías de terceros: Existen numerosas librerías desarrolladas por la comunidad de Arduino que
+                    Librerías de terceros: Existen numerosas librerías desarrolladas por la común idad de Arduino que
                     abarcan una amplia variedad de funcionalidades. Estas librerías son creadas y mantenidas por
                     usuarios y desarrolladores externos, y cubren desde componentes y periféricos específicos hasta
-                    protocolos de comunicación, algoritmos y servicios en la nube. Algunas librerías populares incluyen
+                    protocolos de común icación, algoritmos y servicios en la nube. Algunas librerías populares incluyen
                     "Adafruit", "LiquidCrystal", "Servo", "WiFiManager", "NeoPixel" y "Wire".
                 </li>
             </ul>
@@ -142,8 +142,8 @@
                 Es importante tener en cuenta que, aunque las librerías pueden simplificar el desarrollo, es útil
                 comprender el funcionamiento básico de los componentes y la programación de Arduino para utilizar las
                 librerías de manera efectiva y solucionar problemas si es necesario.</p>
-            <h2 id="libuti" class="titulo">Librerias Utilizadas en este proyecto</h2>
-            <p id="parrafo">Estas son las tres librerias utilizadas en esta maquina:</p>
+            <h2 id="libuti" class="titulo">Librerías Utilizadas en este proyecto</h2>
+            <p id="parrafo">Estas son las tres librerias utilizadas en esta máquina:</p>
             <pre rel="Arduino"><code class="language-arduino line-numbers" style="white-space:pre-wrap;">
                     #include &lt;Servo.h&gt;
                     #include &lt;LiquidCrystal_I2C.h&gt;
@@ -151,16 +151,16 @@
                     #include &lt;Keypad.h&gt;
                   </code>
                 </pre>
-            <p id="parrafo">La libreria <strong>Servo</strong> es la libreria que controla los componentes de los servo
-                motores, el <strong>LiquidCrystal_I2C</strong> es la libreria que controla el componente del mini
-                controlador <strong>I2C</strong> para el <strong>LCD</strong>, la libreria <strong>EEPROM</strong> se
-                encarga de escribir, leer, poner etc. En la memoria del arduino. Y por ultimo tenemos la libreria
-                <strong>Keypad</strong> que controla el componente del panel numerico 4x4.
+            <p id="parrafo">La librería <strong>Servo</strong> es la librería que controla los componentes de los servo
+                motores, el <strong>LiquidCrystal_I2C</strong> es la librería que controla el componente del mini
+                controlador <strong>I2C</strong> para el <strong>LCD</strong>, la librería <strong>EEPROM</strong> se
+                encarga de escribir, leer, poner etc. En la memoria del arduino. Y por último tenemos la libreria
+                <strong>Keypad</strong> que controla el componente del panel numérico  4x4.
             </p>
             <p id="parrafo">Estas librerias tienen que estar configuradas antes de ser usadas, para configurar las
-                librerias hay que declarar los pines que estan conectados a los componentes.</p>
+                librerias hay que declarar los pines que están conectados a los componentes.</p>
             <h3 id="servo" class="titulo">Servo</h3>
-            <p id="parrafo">Esta es la configuracion para los servo motores:</p>
+            <p id="parrafo">Esta es la configuración para los servo motores:</p>
             <pre rel="Arduino"><code class="language-arduino line-numbers" style="white-space:pre-wrap;">
                 #include &lt;Servo.h&gt;
                 Servo motor1;
@@ -174,14 +174,14 @@
                 }
               </code>
             </pre>
-            <p id="parrafo">El parametro <strong>Servo</strong> es para declarar una instancia de la biblioteca Servo y
+            <p id="parrafo">El parámetro <strong>Servo</strong> es para declarar una instancia de la biblioteca Servo y
                 controlar un motor de servo conectado a un pin especifico en la placa <strong>Arduino</strong>. El
-                <strong>attach</strong> es para decir a la instancia a que pin esta conectado un servo motor, es
-                importante que este en la funcion setup para asi cuando el arduino se inicie la instacia sepa que pin
+                <strong>attach</strong> es para decir a la instancia a qué pin esta conectado un servo motor, es
+                importante que esté en la funciónsetup para asi cuando el arduino se inicie la instacia sepa que pin
                 esta el servo motor.
             </p>
             <h3 id="liquid" class="titulo">LiquidCrystal I2C</h3>
-            <p id="parrafo">Esta es la configuracion del LCD:</p>
+            <p id="parrafo">Esta es la configuracióndel LCD:</p>
             <pre rel="Arduino"><code class="language-arduino line-numbers" style="white-space:pre-wrap;">
                     #include &lt;LiquidCrystal_I2C.h&gt;
 
@@ -196,14 +196,14 @@
                       }
                   </code>
                 </pre>
-            <p id="parrafo">El parametro <strong>LiquidCrystal_I2C</strong> es una instancia en Arduino para controlar
-                una pantalla LCD, el parametro <strong>lcd</strong> es el nombre de la instancia, el parametro
-                <strong>0x27</strong> es la direccion I2C de la pantalla <strong>LCD</strong>. Cada pantalla <strong>LCD
-                    I2C</strong> tiene una direccion distinta pero la mas comun es la <strong>0x27</strong> pero aun asi
-                puede ser diferente. El <strong>16</strong> es el numero de columnas que tiene la pantalla
+            <p id="parrafo">El parámetro <strong>LiquidCrystal_I2C</strong> es una instancia en Arduino para controlar
+                una pantalla LCD, el parámetro <strong>lcd</strong> es el nombre de la instancia, el parametro
+                <strong>0x27</strong> es la dirección I2C de la pantalla <strong>LCD</strong>. Cada pantalla <strong>LCD
+                    I2C</strong> tiene una dirección distinta pero la mas común  es la <strong>0x27</strong> pero aun así
+                puede ser diferente. El <strong>16</strong> es el número de columnas que tiene la pantalla
                 <strong>LCD</strong>.
                 Indica cuántos caracteres o símbolos puede mostrar en una sola línea horizontal. El <strong>2</strong>
-                es el numero de filas que tiene la pantalla <strong>LCD</strong>. Indica cuántas líneas de texto puede
+                es el número de filas que tiene la pantalla <strong>LCD</strong>. Indica cuántas líneas de texto puede
                 mostrar verticalmente.
             </p>
             <p id="parrafo">El <strong>lcd.init</strong> se utiliza para inicializar la communicacion con la pantalla
@@ -218,7 +218,7 @@
                 filas.
             </p>
             <h3 id="keypad" class="titulo">Keypad</h3>
-            <p id="parrafo">Esta es la configuracion para el Keypad:</p>
+            <p id="parrafo">Esta es la configuraciónpara el Keypad:</p>
             <pre rel="Arduino"><code class="language-arduino line-numbers" style="white-space:pre-wrap;">
                 #include &lt;Keypad.h&gt;
 
@@ -237,23 +237,23 @@
               </code>
             </pre>
             <p id="parrafo">
-                El parametro <strong>const byte ROWS</strong> define el número de filas y <strong>const byte
+                El parámetro <strong>const byte ROWS</strong> define el número de filas y <strong>const byte
                     COLS</strong> define el
-                número de columnas del teclado numerico.
-                El parametro <strong>char keys[ROWS][COLS]</strong> se define la matriz bidimensional llamada
-                <strong>"keys"</strong> que representa las teclas del teclado numerico,
+                número de columnas del teclado numérico .
+                El parámetro <strong>char keys[ROWS][COLS]</strong> se define la matriz bidimensional llamada
+                <strong>"keys"</strong> que representa las teclas del teclado numérico ,
                 cada matriz contiene el caracterer correspondiente a la tecla en la posición específica de la matriz.
                 Estos
-                parametros <strong>byte rowPins[ROWS] = {5, 4, 3, 2}</strong> y <strong>byte colPins[COLS] = {9, 8, 7,
+                parámetros <strong>byte rowPins[ROWS] = {5, 4, 3, 2}</strong> y <strong>byte colPins[COLS] = {9, 8, 7,
                     6}</strong>
-                son las filas y las columnas donde estan conectados los pines del teclado al arduino.
+                son las filas y las columnas donde están conectados los pines del teclado al arduino.
             </p>
             <pre rel="Arduino"><code class="language-arduino" style="white-space:pre-wrap;">
                 Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
               </code>
             </pre>
-            <p id="parrafo">En esta linea de codigo crea una instancia de la clase <strong>Keypad</strong> con los
-                parametros necesarios para configurar el teclado numerico.
+            <p id="parrafo">En esta línea de codigo crea una instancia de la clase <strong>Keypad</strong> con los
+                parámetros necesarios para configurar el teclado numérico .
                 Se utiliza la clase <strong>Keypad</strong> para crear la instancia y se pasan a
                 <strong>makeKeymap</strong> que indica la matriz de las teclas.
             </p>
@@ -297,19 +297,19 @@
             </code>
         </pre>
 
-            <h1 class="titulo" id="setup">Funcion Setup</h1>
+            <h1 class="titulo" id="setup">Función Setup</h1>
             <p id="parrafo">La función <strong>setup()</strong> en <strong>Arduino</strong> es una función especial que
                 se ejecuta una vez al inicio del programa. Su
                 propósito principal es realizar la configuración inicial de la placa <strong>Arduino</strong>.</p>
             <p id="parrafo">
-                Estas son algunas de sus caracteristicas:
+                Estas son algunas de sus características:
             </p>
             <ul id="ulibrerias">
                 <li>La función <strong>setup()</strong> se ejecuta solo una vez al inicio del programa. </li>
                 <li>
                     La función <strong>setup()</strong> se utiliza para realizar cualquier configuración necesaria antes
                     de que el programa comience
-                    a funcionar. Esto puede incluir la inicialización de pines, configuración de comunicaciones,
+                    a funcionar. Esto puede incluir la inicialización de pines, configuración de común icaciones,
                     establecimiento de
                     variables iniciales, configuración de bibliotecas y otros pasos de preparación.
                 </li>
@@ -328,9 +328,9 @@
                     cualquier otro paso necesario para utilizar la funcionalidad de esas bibliotecas.
                 </li>
             </ul>
-            <h2 class="titulo" id="setupmanual">Funcion Setup para la Maquina Expendedora</h2>
+            <h2 class="titulo" id="setupmanual">Función Setup para la Máquina Expendedora</h2>
             <p id="parrafo">
-                Esta es la funcion <strong>setup</strong> que esta configurada para la Maquina Expendedora:
+                Esta es la función<strong>setup</strong> que esta configurada para la Máquina Expendedora:
             </p>
             <pre rel="Arduino"><code class="language-arduino line-numbers" style="white-space:pre-wrap;">
                         void setup() {
@@ -347,21 +347,21 @@
                       </code>
                     </pre>
             <p id="parrafo">
-                Esta funcion lo que hace es inicial el <strong>Serial</strong> en el puerto <strong>9600</strong> para
+                Esta funciónlo que hace es inicial el <strong>Serial</strong> en el puerto <strong>9600</strong> para
                 ver si hay
                 errores ademas declara las instancias de los motores a sus pines correspondientes, inicia todas las
                 instancias de
-                <strong>LCD</strong> y por ultimo inicia la funcion <strong>"loading"</strong> con el
+                <strong>LCD</strong> y por último inicia la función<strong>"loading"</strong> con el
                 <strong>string</strong> Cargando.
             </p>
-            <h1 id="loop" class="titulo">Funcion Loop</h1>
+            <h1 id="loop" class="titulo">Función Loop</h1>
             <p id="parrafo">
-                La funcion <strong>loop</strong> es una funcion especial que se ejecuta repetidamente despues de la
+                La función<strong>loop</strong> es una funciónespecial que se ejecuta repetidamente después de la
                 funcion
                 <strong>setup</strong> haya finalizado.
             </p>
             <p id="parrafo">
-                Estas son algunas de sus caracteristicas:
+                Estas son algunas de sus características:
             </p>
             <ul id="ulibrerias">
                 <li>La función <strong>setup()</strong> se ejecuta solo una vez al inicio del programa. </li>
@@ -391,14 +391,14 @@
                   }
               </code>
             </pre>
-            <h1 id="loading" class="titulo">Funcion Loading</h1>
+            <h1 id="loading" class="titulo">Función Loading</h1>
             <p id="parrafo">
-                La funcion <strong>loading</strong> lo que realiza es una animacion de carga en la pantalla <strong>LCD</strong> donde
-                muestra puntos por cada segundo, cuando acaba la animacion llama a la funcion <strong>Open</strong>. 
+                La función<strong>loading</strong> lo que realiza es una animacion de carga en la pantalla <strong>LCD</strong> donde
+                muestra puntos por cada segundo, cuando acaba la animacion llama a la función<strong>Open</strong>. 
             </p>
             <pre rel="Arduino"><code class="language-arduino line-numbers" style="white-space:pre-wrap;">
                 void loading(char msg[]) {
-                    lcd.setCursor(0, 0); // Se establece en la posicion del cursos en la pantalla LCD en la columna 0 y fila 0.
+                    lcd.setCursor(0, 0); // Se establece en la posición del cursos en la pantalla LCD en la columna 0 y fila 0.
                     lcd.print(msg); // Escribe el mensaje
                   
                     for (int i = 0; i < 9; i++) { // Es un bucle for que se repite hasta 9 veces comenzando desde el "i = 0" hasta "i = 8"
@@ -406,26 +406,26 @@
                       lcd.print("."); // Despues del retraso se imprime un punto en la pantalla LCD
                     }
                   
-                    Open(); // Llama a la funcion Open();
+                    Open(); // Llama a la funciónOpen();
                   }
               </code>
             </pre>
             <img src="../programacion-image/loading.png" alt="">
-            <h1 id="open" class="titulo">Funcion Open</h1>
+            <h1 id="open" class="titulo">Función Open</h1>
             <p id="parrafo">
-                La funcion <strong>Open</strong> realiza una serie de acciones relacionadas con la pantalla <strong>LCD</strong> y la
-                interacción del usuario utilizando el teclado numerico.
+                La función<strong>Open</strong> realiza una serie de acciones relacionadas con la pantalla <strong>LCD</strong> y la
+                interacción del usuario utilizando el teclado numérico .
             </p>
             <pre rel="Arduino"><code class="language-arduino line-numbers" style="white-space:pre-wrap;">
                 void Open() {
                     lcd.clear(); // Limpiamos el lcd
-                    static int positionCounter = 0; // declaramos una variable de 0 a la posicion de la letra
+                    static int positionCounter = 0; // declaramos una variable de 0 a la posición de la letra
                     char key = ' '; // declaramos una variable que inicia con un valor de un espacion en blanco
                 
-                    key = text("1. Introducir Un Codigo", "Presionar", positionCounter); // Llama a la funcion text y pasa una informacion de texto que muestra las opciones del menú y un mensaje para indicar al usuario que presione una tecla ademas tambien pasa el valor de positioncounter
+                    key = text("1. Introducir Un Codigo", "Presionar", positionCounter); // Llama a la funcióntext y pasa una información de texto que muestra las opciones del menú y un mensaje para indicar al usuario que presione una tecla ademas tambien pasa el valor de positioncounter
                 
                     switch (key) { // es un interruptor que realiza diferentes acciones segun el valor de la key que es la tecla presionada por el usuario
-                      case '1': // Si presiona 1 le llevara a otra funcion llamada codigo
+                      case '1': // Si presiona 1 le llevara a otra funciónllamada codigo
                         lcd.clear();
                         lcd.setCursor(0, 0);
                         lcd.print("Presiono 1");
@@ -480,14 +480,14 @@
               </code>
             </pre>
             <p id="parrafo">
-                Esta funcion muestra un menu en la pantalla LCD y espera a que el usuario presione una tecla utilizando el teclado numerico. Segun la tecla presionada, se ejecuta diferentes opciones, como mostrar mensajes en la pantalla, esperar ciertos periodos de tiempo y llamar a otras funciones como <strong>codigo();</strong>.
+                Esta funciónmuestra un menú en la pantalla LCD y espera a que el usuario presione una tecla utilizando el teclado numérico . Según la tecla presionada, se ejecuta diferentes opciones, como mostrar mensajes en la pantalla, esperar ciertos periodos de tiempo y llamar a otras funciones como <strong>codigo();</strong>.
             </p>
-            <h2 id="manual" class="titulo">Funcion Manual</h2>
+            <h2 id="manual" class="titulo">Función Manual</h2>
             <p id="parrafo">
-                Es una funcion que incluye un menu secreto que se presiona con la tecla <strong>*</strong> del teclado numerico, y para
-                entra a este menu tendras que poner una contraseña que es la siguiente: <strong>1520A5B</strong> si se introduce mal la
-                contraseña se reiniciara el sistema, si se introduce bien la contraseña estaras dentro del menu de mantenimiento. Dentro
-                del menu puedes seleccionar opciones como <strong>Borrar EEPROM</strong>, <strong>Reboot</strong> y <strong>Mostrar EEPROM</strong>.
+                Es una funciónque incluye un menú secreto que se presiona con la tecla <strong>*</strong> del teclado numérico , y para
+                entra a este menú tendras que poner una contraseña que es la siguiente: <strong>1520A5B</strong> si se introduce mal la
+                contraseña se reiniciara el sistema, si se introduce bien la contraseña estaras dentro del menú de mantenimiento. Dentro
+                del menú puedes seleccionar opciones como <strong>Borrar EEPROM</strong>, <strong>Reboot</strong> y <strong>Mostrar EEPROM</strong>.
             </p>
             <pre rel="Arduino"><code class="language-arduino line-numbers" style="white-space:pre-wrap;">
                 void manual() {
@@ -552,7 +552,7 @@
                   }
               </code>
             </pre>
-            <p id="parrafo">Codigo de Borrar <strong>EEPROM:</strong></p>
+            <p id="parrafo">Código de Borrar <strong>EEPROM:</strong></p>
             <pre rel="Arduino"><code class="language-arduino line-numbers" style="white-space:pre-wrap;">
                 void borrarEPROM() {
                     for (int i = 0 ; i < EEPROM.length() ; i++) {
@@ -566,9 +566,9 @@
               </code>
             </pre>
             <p id="parrafo">
-                Esta funcion lo que hace es que pone todas las direcciones del EEPROM a 0.
+                Esta funciónlo que hace es que pone todas las direcciones del EEPROM a 0.
             </p>
-            <p id="parrafo">Codigo de Mostrar <strong>EEPROM:</strong></p>
+            <p id="parrafo">Código de Mostrar <strong>EEPROM:</strong></p>
             <pre rel="Arduino"><code class="language-arduino line-numbers" style="white-space:pre-wrap;">
                 void borrarEPROM() {
                     for (int i = 0 ; i < EEPROM.length() ; i++) {
@@ -584,25 +584,25 @@
             <p id="parrafo">
                 Para ver las direcciones del <strong>EEPROM</strong> tendras que conectar antes un ordenador con arduino para verlo en el serial.
             </p>
-            <h1 id="text" class="titulo">Funcion Text</h1>
+            <h1 id="text" class="titulo">Función Text</h1>
             <p id="parrafo">
-                La funcion <strong>text</strong> muestra un mensaje en dos lineas en la pantalla <strong>LCD</strong> y espera a que el
-                usuario presione una tecla utilizando el teclado numerico.
+                La función<strong>text</strong> muestra un mensaje en dos líneas en la pantalla <strong>LCD</strong> y espera a que el
+                usuario presione una tecla utilizando el teclado numérico .
             </p>
             <pre rel="Arduino"><code class="language-arduino line-numbers" style="white-space:pre-wrap;">
                 char text(const String& linea1, const String& linea2, int& positionCounter) {
                     lcd.clear(); // Borra el contenido actual de la pantalla LCD 
                     char key = ' '; // Variable de key que esta en blanco
-                    while (key != '1' && key != '2' && key != '3' && key != '4' && key != '5' && key != '6' && key != '7' && key != '8' && key != '9' && key != '0' && key != 'A' && key != 'B' && key != 'C' && key != 'D' && key != '*' && key != '#') { // Es un bucle hasta que no haya una tecla valida se repetira el bucle
+                    while (key != '1' && key != '2' && key != '3' && key != '4' && key != '5' && key != '6' && key != '7' && key != '8' && key != '9' && key != '0' && key != 'A' && key != 'B' && key != 'C' && key != 'D' && key != '*' && key != '#') { // Es un bucle hasta que no haya una tecla válida se repetira el bucle
                       lcd.clear(); // Borra el contenido
-                      lcd.setCursor(0, 0); // Establece la posicion la columna 0 y fila 0 del lcd
-                      lcd.print(linea1.substring(positionCounter)); // Imprime en la pantalla LCD una porcion de la primera linea del mensaje
-                      lcd.setCursor(0, 1); // Establece la posicion la columna 0 y fila 1 del lcd
-                      lcd.print(linea2 + ": " + String(key)); // Imprime en la pantalla LCD la segunda linea del mensaje y al lado de los puntos aparecera el valor actual de la tecla
+                      lcd.setCursor(0, 0); // Establece la posición la columna 0 y fila 0 del lcd
+                      lcd.print(linea1.substring(positionCounter)); // Imprime en la pantalla LCD una porcion de la primera línea del mensaje
+                      lcd.setCursor(0, 1); // Establece la posición la columna 0 y fila 1 del lcd
+                      lcd.print(linea2 + ": " + String(key)); // Imprime en la pantalla LCD la segunda línea del mensaje y al lado de los puntos aparecera el valor actual de la tecla
                       delay(600); // Retraso de 600ms
                       key = keypad.getKey(); // Lee la tecla presionada
                       positionCounter++; // Sube el valor del positionCounter en 1 para mover la porcion del texto
-                      if (positionCounter >= linea1.length()) { // Verifica si ha alcanzado o superado la longitud de la primera linea del mensaje, si es asi se pone otra vez a 0 la variable positionCounter
+                      if (positionCounter >= linea1.length()) { // Verifica si ha alcanzado o superado la longitud de la primera línea del mensaje, si es asi se pone otra vez a 0 la variable positionCounter
                         positionCounter = 0;
                       }
                     }
@@ -611,11 +611,11 @@
                   }
               </code>
             </pre>
-            <p id="parrafo">La funcion <strong>text</strong> muestra un mensaje en las 2 lineas de la pantalla <strong>LCD</strong>
-                y espera a que el usuario presione una tecla usando el teclado numerico. Hasta que no haya una tecla valida se repetira el bucle. </p>
-                <h1 id="codigo" class="titulo">Funcion Codigo</h1>
+            <p id="parrafo">La función<strong>text</strong> muestra un mensaje en las 2 líneas de la pantalla <strong>LCD</strong>
+                y espera a que el usuario presione una tecla usando el teclado numérico . Hasta que no haya una tecla válida se repetira el bucle. </p>
+                <h1 id="codigo" class="titulo">Función Codigo</h1>
                 <p id="parrafo">
-                    Esta funcion <strong>codigo</strong> realiza una verificacion y uso del codigo ingresado por el usuario mediante el teclado numerico.
+                    Esta función<strong>codigo</strong> realiza una verificación y uso del codigo ingresado por el usuario mediante el teclado numérico .
                 </p>
                 <pre rel="Arduino"><code class="language-arduino line-numbers" style="white-space:pre-wrap;">
                     String codigosDisponibles[] = {
@@ -669,12 +669,12 @@
                           guardarCodigoIngresado(codigo);
                       
                           lcd.clear();
-                          lcd.print("Codigo valido");
+                          lcd.print("Código valido");
                           delay(2000);
                           servomotores();
                         } else {
                           lcd.clear();
-                          lcd.print("Codigo invalido");
+                          lcd.print("Código invalido");
                           delay(2000);
                         }
                         reboot();
@@ -683,31 +683,31 @@
                   </code>
                 </pre>
                 <p id="parrafo">
-                    El valor <strong>codigosDisponibles</strong> es donde van todos los codigos que tienen ser validos. La variable
-                    <strong>CODIGO_EEPROM_ADDRESS</strong> nos permite almacenar en una direccion del <strong>EEPROM</strong> dentro de la placa <strong>arduino</strong> todos los
-                    codigos ingresados para evitar que no se vuelvan a ingresar otra vez. La funcion solo aceptara los codigos de una maximo
+                    El valor <strong>codigosDisponibles</strong> es donde van todos los códigos que tienen ser válidos. La variable
+                    <strong>CODIGO_EEPROM_ADDRESS</strong> nos permite almacenar en una dirección del <strong>EEPROM</strong> dentro de la placa <strong>arduino</strong> todos los
+                    códigos ingresados para evitar que no se vuelvan a ingresar otra vez. La funciónsolo aceptara los códigos de una maximo
                     de 5 caracteres, entonces cuando el usuario este ingresando el codigo en la pantalla <strong>LCD</strong> se ingresara a
-                    la vez * en la linea de abajo. El bucle <strong>for</strong> nos permite verificar si el codigo ya ha sido ingresado o
+                    la vez * en la línea de abajo. El bucle <strong>for</strong> nos permite verificar si el codigo ya ha sido ingresado o
                     coincide con algun codigo disponible si hay una coincidencia la variable <strong>codigoValido</strong> se pone en
                     verdadero y si el codigo disponible esta vacio se establece como <strong>codigoUtilizado</strong> en verdadero de lo
                     contrario se marca el codigo disponible como utilizado y si esta utilizado se llama a la funcion
-                    <strong>guardarCodigoUtilizado()</strong>. Verifica recorriendo todos los codigos disponibles se verifica si el codigo
+                    <strong>guardarCodigoUtilizado()</strong>. Verifica recorriendo todos los códigos disponibles se verifica si el codigo
                     es valido y no utilizado antes si no ha sido canjeado entonces se llama a la funcion
                     <strong>guardarCodigoIngresado</strong> para guardarlo en el EEPROM y en el <strong>LCD</strong> se muestra codigo
-                    valido durante 2s y se llaman a la funcion de los <strong>servomotores();</strong>. Si el codigo ingresado no es valido
-                    porque no esta puesto bien o ya ha sido ingresado en la pantalla pondra "Codigo Invalido" y 2s despues se llamara a la funcion <strong>reboot();</strong>.
+                    valido durante 2s y se llaman a la funciónde los <strong>servomotores();</strong>. Si el codigo ingresado no es valido
+                    porque no esta puesto bien o ya ha sido ingresado en la pantalla pondra "Código Invalido" y 2s después se llamara a la función<strong>reboot();</strong>.
                 </p>
 
                 <p id="parrafo">
-                    Permite al usuario ingresar un codigo de 5 caracteres utilizando un teclado numerico. Despues verifica si el codigo
+                    Permite al usuario ingresar un codigo de 5 caracteres utilizando un teclado numérico . Despues verifica si el codigo
                     ingresado es valido, si no ha sido utilizado previamente y no ha sido canjeado antes. Dependiendo de estas condiciones,
                     se realizan acciones adicionales, como marcar el código como utilizado, guardar el código ingresado o realizar acciones
                     relacionadas con los servomotores. También se muestra un mensaje en la pantalla <strong>LCD</strong> para informar al usuario si el
                     código es válido o no.
                 </p>
-                <h1 id="reboot" class="titulo">Funcion Reboot</h1>
+                <h1 id="reboot" class="titulo">Función Reboot</h1>
                 <p id="parrafo">
-                    La funcion <strong>reboot</strong> reinicia el controlador <strong>arduino</strong>.
+                    La función<strong>reboot</strong> reinicia el controlador <strong>arduino</strong>.
                 </p>
                 <pre rel="Arduino"><code class="language-arduino line-numbers" style="white-space:pre-wrap;">
                     void reboot() {
@@ -717,13 +717,13 @@
                   </code>
                 </pre>
                 <p id="parrafo">
-                    La linea MCUSR es una variable que registra el controlador que almacena la informacion sobre el origen de un reincio o
-                    reset y el asm volatile es una instruccion que realiza un salto a la direccion de memoria 0, lo que efectivamente
+                    La línea MCUSR es una variable que registra el controlador que almacena la información sobre el origen de un reincio o
+                    reset y el asm volatile es una instrucción que realiza un salto a la dirección de memoria 0, lo que efectivamente
                     reinicia el controlador.
                 </p>
-                <h1 id="servfuc" class="titulo">Funcion ServoMotores</h1>
+                <h1 id="servfuc" class="titulo">Función ServoMotores</h1>
                 <p id="parrafo">
-                    La funcion de <strong>servomotores</strong> se encarga de que el usuario elija que Articulo quiere sacar de la maquina, pueden sacar
+                    La funciónde <strong>servomotores</strong> se encarga de que el usuario elija que Articulo quiere sacar de la máquina, pueden sacar
                     hasta un maximo de 3 articulos.
                 </p>
                 <pre rel="Arduino"><code class="language-arduino line-numbers" style="white-space:pre-wrap;">
@@ -778,12 +778,12 @@
                 </pre>
 
                 <p id="parrafo">
-                    Esta funcion basicamente es un menu que muestra infinitamente las opciones hasta que el usuario no pulse una tecla
-                    valida, si el usuario presiona una tecla valida se movera el motor para extraer el Articulo.
+                    Esta funciónbasicamente es un menú que muestra infinitamente las opciones hasta que el usuario no pulse una tecla
+                    valida, si el usuario presiona una tecla válida se movera el motor para extraer el Articulo.
                 </p>
-                <h1 id="savecode" class="titulo">Funciones Guardar Codigo Ingresado</h1>
+                <h1 id="savecode" class="titulo">Funciones Guardar Código Ingresado</h1>
                 <p id="parrafo">
-                    La funcion <strong>guardarCodigoUtilizado</strong> se encarga de crear un espacio vacio para marcar la posicion correspondiente como codigo utilizado.
+                    La función<strong>guardarCodigoUtilizado</strong> se encarga de crear un espacio vacio para marcar la posición correspondiente como codigo utilizado.
                 </p>
                 <pre rel="Arduino"><code class="language-arduino line-numbers" style="white-space:pre-wrap;">
                     void guardarCodigoUtilizado(int index) {
@@ -795,21 +795,21 @@
                   </code>
                 </pre>
                 <p id="parrafo">
-                    La variable <strong>String</strong> llamada <strong>emptyString</strong> al principio esta vacia pero se utiliza para
+                    La variable <strong>String</strong> llamada <strong>emptyString</strong> al principio esta vacía pero se utiliza para
                     remplazar el codigo utilzado en la memoria EEPROM. La sentencia <strong>for</strong> se utiliza para recorrer cada
-                    caracter de <strong>emptyString</strong>, dentro del bucle de for tambien esta la funcion <strong>EEPROM.write</strong>,
-                    esto lo que hace es escribir cada caracter de la variable en la memoria <strong>EEPROM</strong>. El codigo lo escribe en
-                    la direccion calculada de esta sintaxis <strong>CODIGO_EEPROM_ADDRESS + index * emptyString.length() + i</strong> que se
-                    almacena cada caracter del codigo proporcionado.
+                    carácter de <strong>emptyString</strong>, dentro del bucle de for tambien esta la función<strong>EEPROM.write</strong>,
+                    esto lo que hace es escribir cada carácter de la variable en la memoria <strong>EEPROM</strong>. El codigo lo escribe en
+                    la dirección calculada de esta sintaxis <strong>CODIGO_EEPROM_ADDRESS + index * emptyString.length() + i</strong> que se
+                    almacena cada carácter del codigo proporcionado.
                 </p>
                 <p id="parrafo">
-                    La funcion <strong>guardarCodigoIngresado</strong> recibe el codigo ingresado y busca una posicion vacia en la memoria <strong>EEPROM</strong> para guardarlo.
+                    La función<strong>guardarCodigoIngresado</strong> recibe el codigo ingresado y busca una posición vacía en la memoria <strong>EEPROM</strong> para guardarlo.
                 </p>
                 <pre rel="Arduino"><code class="language-arduino line-numbers" style="white-space:pre-wrap;">
                     void guardarCodigoIngresado(const String& codigo) {
                         int codigoIndex = CODIGO_EEPROM_ADDRESS / sizeof(String); // Calcula el indice inicial para guardar el codigo en el EEPROM
                       
-                        while (true) { // El bucle se repetira hasta encontrar una posicion vacia en el EEPROM
+                        while (true) { // El bucle se repetira hasta encontrar una posición vacía en el EEPROM
                           String codigoEnEEPROM; // En esta variable se guarda el codigo ingresado
                           for (int i = 0; i < codigo.length(); i++) {
                             char byteValue = EEPROM.read(CODIGO_EEPROM_ADDRESS + codigoIndex * codigo.length() + i);
@@ -834,8 +834,8 @@
                     posición.
                 </p>
 
-                <!--Funcion Canjeado-->
-                <h1 id="codecanj" class="titulo">Funcion Codigo Canjeado</h1>
+                <!--Función Canjeado-->
+                <h1 id="codecanj" class="titulo">Función Código Canjeado</h1>
                 <pre rel="Arduino"><code class="language-arduino line-numbers" style="white-space:pre-wrap;">
                     bool codigoCanjeado(const String& codigo) {
                         int codigoIndex = CODIGO_EEPROM_ADDRESS / sizeof(String);
@@ -860,14 +860,14 @@
                       
                 </code></pre>
                 <p id="parrafo">
-                    Esta funcion <strong>codigoCanjeado</strong> para verificar un codigo en especifico ha sido canjeado y si esta dentro de
+                    Esta función<strong>codigoCanjeado</strong> para verificar un codigo en especifico ha sido canjeado y si esta dentro de
                     la memoria <strong>EEPROM</strong> entonces recorre todo el <strong>EEPROM</strong> ha encontrar coincidencias si
                     devuelve un <strong>true</strong>, entonces significa que el codigo ha sido canjeado, si devuelve un
                     <strong>false</strong> significa que no ha encontrado ninguna coincidencia, el codigo no ha sido canjeado.
                 </p>
 
 
-                <h1 id="vercomponen" class="titulo">Verificacion de los componentes</h1>
+                <h1 id="vercomponen" class="titulo">Verificación de los componentes</h1>
                 <p id="parrafo">Para verificar si los componentes funcionan hemos hecho un codigo para verificar si los componentes
                     realizan alguna accion, realizan un par de acciones.</p>
                     <h2 id="verkeypad" class="titulo">
@@ -935,9 +935,9 @@
                             }
                      </code></pre>
                      <p id="parrafo"></p>
-                     <h1 id="codecomplete" class="titulo">Codigo Completo</h1>
-                <!--<p id="parrafo"><a href="../archivos/codigomaquina1.ino">Descargar</a></p>-->
-                <div class="boton">                <a href="../archivos/codigomaquina1.ino"><div class="button" data-tooltip="Size: 11kB">
+                     <h1 id="codecomplete" class="titulo">Código Completo</h1>
+                <!--<p id="parrafo"><a href="../archivos/codigomáquina1.ino">Descargar</a></p>-->
+                <div class="boton">                <a href="../archivos/codigomáquina1.ino"><div class="button" data-tooltip="Size: 11kB">
                     <div class="button-wrapper">
                       <div class="text">Descargar</div>
                         <span class="icon">
@@ -977,15 +977,15 @@
 </body>
 <footer>
     <div class="columna" id="columna1">
-        <h1>Programacion</h1>
+        <h1>Programación</h1>
     </div>
     <div class="columna" id="columna2">
         <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="materiales.html">Materiales</a></li>
-            <li><a href="programacion.html">Programacion</a></li>
-            <li><a href="montaje.html">Montaje</a></li>
-            <li><a href="">Código de Activación</a></li>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="materiales.html">Materiales</a></li>
+          <li><a href="programacion.html">Programación</a></li>
+          <li><a href="montaje.html">Montaje</a></li>
+          <li><a href="codigodeactivacion.html">Código de Activación</a></li>
         </ul>
     </div>
 </footer>
